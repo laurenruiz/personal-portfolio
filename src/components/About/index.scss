@@ -1,0 +1,155 @@
+.stage-cube-cont {
+    width: 50%;
+    height: 100%;
+    margin-top: -10vh;
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow: hidden;
+    position: relative; /* Make sure it's positioned correctly */
+}
+
+.cubespinner {
+    animation-name: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    transform-origin: center; /* Center the rotation point */
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+
+    div {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 1px solid #F2C5C7;
+        background: rgba(255, 255, 255, 0.15);
+        text-align: center;
+        font-size: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 20px 0px lightyellow;
+    }
+
+    .face1 {
+        transform: translateZ(100px);
+    }
+    .face2 {
+        transform: rotateY(90deg) translateZ(100px);
+    }
+    .face3 {
+        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+    }
+    .face4 {
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+    }
+    .face5 {
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+    }
+    .face6 {
+        transform: rotateX(-90deg) translateZ(100px);
+    }
+}
+
+@keyframes spincube {
+    from,
+    to {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16% {
+        transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    33% {
+        transform: rotateY(-90deg) rotateX(90deg);
+    }
+    50% {
+        transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66% {
+        transform: rotateY(-270deg) rotateX(90deg);
+    }
+    83% {
+        transform: rotateX(90deg);
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+    
+    .about-page {
+        //max-height: 100%;
+        height: 100vh; /* Full viewport height */
+        //padding-bottom: 20vh; /* Add padding at the bottom */
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        //text-align: center;
+        justify-content: flex-start;
+        align-items: center; /* Center elements horizontally */
+        height: 100vh; /* Make sure the height is full viewport height */
+
+        //margin-bottom: 30vh;
+        .text-zone {
+            p{
+                font-size: large;
+            }
+            .photos{
+                .pics{
+                    width: 60vw;
+                }
+                flex-direction: column;
+            }
+            overflow: hidden;
+            order: 1;
+            min-width: 50%;
+            box-sizing: border-box;
+            padding-top: 5%;
+            padding-bottom: calc(300px + 100vh);
+            max-width: 90%; /* Allow text zone to take full width on smaller screens */
+            h1 {
+                text-align: left;
+                font-size: 10vw;
+            }
+            h1::before{
+                font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
+                bottom: 2.0vw;
+            }
+            h1::after {
+                font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
+                bottom: -2.5vw;
+            }
+    
+            p{
+                padding-left: 5vh;
+                padding-right: 5vh;
+            }
+        }
+        
+
+        
+
+    }
+
+    .stage-cube-cont {
+        order: 2;
+        padding-bottom: 50%;
+        margin-left: 64px;
+        display: flex; /* Use Flexbox */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Align towards the top */
+        width: 100%; /* Ensure it takes full width */
+        margin-top: 80px; /* Adjust as necessary to position from the top */
+        margin-bottom: 150px; /* Adjust as necessary to position from the top */
+        overflow: visible;
+    }
+
+    .cubespinner {
+        width: 150px;
+        height: 150px;
+        transform-origin: center;
+    }
+}

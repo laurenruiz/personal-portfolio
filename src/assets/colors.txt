@@ -1,0 +1,9 @@
+hex codes for colors used, roughly ordered from lightest to darkest:
+#FFFFFF
+#F2C5C7
+#F3ACA6
+#F5A6B3
+#E97A80
+#B7676B
+#AC6869
+#7F2524
