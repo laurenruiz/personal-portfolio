@@ -22,7 +22,7 @@ const ConnectViolet = () => {
                     <h1>
                         <AnimatedLetters
                             letterClass={letterClass}
-                            strArray={['ConnectViolet']}
+                            strArray={['Connect','Violet']}
                             idx={15}
                         />
                     </h1>

@@ -373,13 +373,13 @@ textarea {
     .contact-page{
         overflow-y: scroll;
         margin-left: 0;
-        margin-bottom: calc(200px + 10vh);
+        margin-bottom: calc(400px + 30vh);
     }
     .text-zone {
         width: 90%; /* Adjust the width on smaller screens */
         margin-left: 64px;
         margin-bottom: 0vh;
-        padding-bottom: 0.25vh;
+        padding-bottom: 0vh;
 
 
         h1 {
@@ -396,15 +396,71 @@ textarea {
         }
 
         p{
-            padding-left: 5vh;
-            padding-right: 5vh;
-            font-size: large;
+            padding-left: 3vh;
+            padding-right: 3vh;
+            font-size: 3vw;
             padding-bottom: 0vh;
         }
     }
 
     .contact-form {
         margin-top: 0vh;
+    }
+
+    .send-button {
+        font-size: 3.5vw;
+        border: 0.75vw solid #7F2524;
+        padding: 0.5vw 1.25vw;
+    }
+
+    .contact-form li {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .contact-form li.half {
+        width: 100%; /* Ensure full width on smaller screens */
+        margin-bottom: 10px; /* Add some space between stacked items */
+    }
+}
+
+@media (max-width: 450px) {
+    .contact-page{
+        overflow-y: scroll;
+        margin-left: 0;
+        margin-bottom: calc(600px + 20vh);
+    }
+    .text-zone {
+        width: 90%; /* Adjust the width on smaller screens */
+        margin-left: 64px;
+        margin-bottom: 0vh;
+        padding-bottom: 8.5vh;
+
+
+        h1 {
+            text-align: left;
+            font-size: 10vw;
+        }
+        h1::before{
+            font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
+            bottom: 2.0vw;
+        }
+        h1::after {
+            font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
+            bottom: -2.5vw;
+        }
+
+        p{
+            padding-left: 1vh;
+            padding-right: 1vh;
+            font-size: 6vw;
+            padding-bottom: 0vh;
+        }
+    }
+
+    .contact-form {
+        margin-top: 0vh;
+        padding-right: 5vw;
+
     }
 
     .send-button {

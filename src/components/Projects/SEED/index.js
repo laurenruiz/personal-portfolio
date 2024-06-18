@@ -31,7 +31,7 @@ const SEED = () => {
                     </div>
                     <div className='market-update'>
                         <h4>Here's a market update I made!</h4>
-                        <iframe src="https://1drv.ms/b/s!ArgCXqZsEoVTg898EITOkSP9_b2iPg?embed=1&em=2" width="288" height="476" frameborder="0" scrolling="no" title="May Market Update"></iframe>
+                        <iframe src="https://onedrive.live.com/embed?resid=5385126CA65E02B8%2197918&amp;authkey=%21ACuJIIiXxixqtiQ&amp;em=2&amp;wdAr=0.7727272727272727" width="288px" height="476px" frameborder="0" title="MayMarketUpdate"></iframe>
                     </div>
                     <br></br>
                     <br></br>

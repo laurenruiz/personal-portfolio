@@ -90,13 +90,14 @@
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .lsls-page{
         flex-direction: column;
         margin-bottom: 100px;
         overflow-y: scroll;
         overflow-x: hidden;
-        max-width: 80%;
+        max-width: fit-content;
+        max-height: fit-content;
         height: calc(90vh - 200px); /* Adjust height to end 100px before the bottom */
         //align-items: center;
         padding-bottom: 100px;
@@ -115,19 +116,133 @@
                 font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
                 bottom: -2.5vw;
             }
-            h4{
-                font-size: 4vw;
+    
+            p{
+                padding-left: 3vw;
+                padding-right: 0vw;
             }
+            h4{
+                font-size: 4.5vw;
+                padding-left: 3vw;
+                padding-right: 0vw;
+            }
+        }
+
+        .images{
             flex-direction: column;
             margin-bottom: 100px;
             align-items: center;
+            //padding-right: 8vw;
 
-        
-
+            h3{
+                font-size: 4vw;
+            }
             
+            margin-bottom: 100px;
         }
-
+        
     }
     
     
 }
+
+@media (max-width: 450px) {
+    .lsls-page{
+        flex-direction: column;
+        margin-bottom: 100px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        max-width: fit-content;
+        max-height: fit-content;
+        height: calc(90vh - 200px); /* Adjust height to end 100px before the bottom */
+        //align-items: center;
+        padding-bottom: 100px;
+        
+        .text-zone{
+            margin-left: 0px;
+            margin-right: 0px;
+            h1 {
+                text-align: left;
+                font-size: 11vw;
+                word-wrap: break-word;
+            }
+            h1::before{
+                font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
+                bottom: 2.0vw;
+            }
+            h1::after {
+                font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
+                bottom: -2.5vw;
+            }
+    
+            p{
+                padding-left: 3vw;
+                padding-right: 0vw;
+            }
+            h4{
+                font-size: 4.5vw;
+                padding-left: 3vw;
+                padding-right: 0vw;
+            }
+        }
+
+        .images{
+            flex-direction: column;
+            margin-bottom: 100px;
+            align-items: center;
+            padding-left: 12vw;
+
+        
+            h3{
+                font-size: 4vw;
+            }
+            
+            margin-bottom: 100px;
+        }
+        
+    }
+    
+    
+}
+
+// @media (max-width: 800px) {
+//     .lsls-page{
+//         flex-direction: column;
+//         margin-bottom: 100px;
+//         overflow-y: scroll;
+//         overflow-x: hidden;
+//         max-width: 80%;
+//         height: calc(90vh - 200px); /* Adjust height to end 100px before the bottom */
+//         //align-items: center;
+//         padding-bottom: 100px;
+        
+//         .text-zone{
+//             h1 {
+//                 text-align: left;
+//                 font-size: 10vw;
+//                 word-wrap: break-word;
+//             }
+//             h1::before{
+//                 font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
+//                 bottom: 2.0vw;
+//             }
+//             h1::after {
+//                 font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
+//                 bottom: -2.5vw;
+//             }
+//             h4{
+//                 font-size: 4vw;
+//             }
+//             flex-direction: column;
+//             margin-bottom: 100px;
+//             align-items: center;
+
+        
+
+            
+//         }
+
+//     }
+    
+    
+// }

@@ -121,6 +121,7 @@
         padding-bottom: 100px;
         .text-zone{
             margin-right: 0px;
+            margin-left: 16px;
             justify-content: center;
             align-items: center;
             max-width: 80%;
@@ -147,6 +148,60 @@
             margin-bottom: 100px;
             h3{
                 font-size: 4vw;
+            }
+            margin-bottom: 100px;
+        }
+        
+    }
+    
+}
+
+@media (max-width: 450px) {
+    .projects-page{
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 100px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: calc(90vh - 200px); /* Adjust height to end 100px before the bottom */
+        padding-bottom: 100px;
+        max-height: fit-content;
+        .text-zone{
+            margin-right: 0px;
+            margin-left: 0px;
+            justify-content: center;
+            align-items: center;
+            max-width: 80%;
+            h1 {
+                text-align: left;
+                font-size: 12vw;
+                word-wrap: break-word;
+                margin-right: 0px;
+                padding-right: 0px;
+            }
+            h1::before{
+                font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
+                bottom: 2.0vw;
+            }
+            h1::after {
+                font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
+                bottom: -2.0vw;
+            }
+    
+            p{
+                padding-left: 5vh;
+                padding-right: 5vh;
+            }
+        }
+        .images{
+            flex-direction: column;
+            margin-bottom: 100px;
+            h3{
+                font-size: 4vw;
+            }
+            img{
+                width: 150px;
+                height: 150px;
             }
             margin-bottom: 100px;
         }

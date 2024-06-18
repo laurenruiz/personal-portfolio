@@ -179,4 +179,72 @@ h2 {
         white-space: nowrap;
     }
 
+    
+}
+
+@media (max-width: 450px) {
+    .home-page {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .headshot {
+        .img{
+            width: 100%;
+            max-height: 80vw;
+            object-fit: contain;
+        }
+        width: 55%; /* Adjust the width of the container */
+        height: 100%;
+        order: 1;
+        margin-top: 10vw;
+        margin-left: 0;
+        margin-bottom: 10vw; /* Add some space below the image */
+    }
+
+    .text-zone {
+        order: 2;
+        padding: 1vw;
+        max-width: 80%; /* Allow text zone to take full width on smaller screens */
+        padding-right: 10vw;
+        padding-bottom: calc(200px + 10vh);
+
+    }
+
+    h1 {
+        font-size: 8vw; /* Adjust font-size for smaller screens */
+        max-width: 90%;
+        word-wrap: break-word;
+    }
+
+    h1::before, h1::after {
+        font-size: 4vw; /* Adjust pseudo-element font-size for smaller screens */
+    }
+
+    h2 {
+        font-size: 5vw; /* Adjust font-size for smaller screens */
+        margin:64px;
+        margin-left: 2vw;
+        text-align: center;
+    }
+
+    .flat-button {
+        font-size: 3vw;
+        font-weight: 750;
+        letter-spacing: 0.07vw;
+        font-family: sans-serif;
+        text-decoration: none;
+        margin: 0px;
+        border: 0.8vw solid #f3aca6;
+        margin-top: 0vw;
+        padding-left: 1.25vw;
+        padding-right: 1.25vw;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+        margin-bottom: 5vw;
+        display: inline-block;
+        background-color: transparent; /* Ensure the background is transparent */
+        white-space: nowrap;
+    }
+
 }

@@ -150,23 +150,60 @@
 
 .bgButterflies{
     opacity: 10%;
-    scale: 1.5;
+    scale:150%;
     color: #f2c5c7;
     .solid-logo1{
         rotate: 30deg;
-        translate: 700px 165px;
+        translate: 43vw 18vh;
     }
     .solid-logo2{
         rotate: -30deg;
-        translate: 125px 325px;
+        translate: 8vw 34vh;
     }
     .solid-logo3{
         rotate: 30deg;
-        translate: 200px 500px;
+        translate: 12vw 51vh;
     }
     .solid-logo4{
         rotate: -30deg;
-        translate: -350px 0px;
+        translate: -20vw 0vh;
     }
 }
 
+@media (max-width: 768px) {
+    .bgButterflies{
+            scale: 100%;
+            .solid-logo1{
+                translate: 40vw 32vh;
+            }
+            .solid-logo2{
+                translate: -8vw 57vh;
+            }
+            .solid-logo3{
+                translate: -5vw 82vh;
+            }
+            .solid-logo4{
+                translate: -55vw 7vh;
+            }
+        }
+    
+}
+
+@media (max-width: 450px) {
+    .bgButterflies{
+            scale: 70%;
+            .solid-logo1{
+                translate: 60vw 25vh;
+            }
+            .solid-logo2{
+                translate: 18vw 35vh;
+            }
+            .solid-logo3{
+                translate: 60vw 40vh;
+            }
+            .solid-logo4{
+                translate: 18vw -90vh;
+            }
+        }
+    
+}

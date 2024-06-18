@@ -20,7 +20,7 @@ const Latitude = () => {
                     <h1>
                         <AnimatedLetters
                             letterClass={letterClass}
-                            strArray={['D.E. Shaw\'s', 'Latitude', 'Fellowship']}
+                            strArray={['D.E.', 'Shaw\'s', 'Latitude', 'Fellowship']}
                             idx={25}
                         />
                     </h1>
