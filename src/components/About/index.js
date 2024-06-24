@@ -28,7 +28,7 @@ const About = () => {
                         />
                     </h1>
                     <p>
-                        Hi! I'm Lauren, I'm a sophomore in Computer Science at Virginia Tech! I
+                        Hi! I'm Lauren, I'm a rising junior in Computer Science at Virginia Tech! I
                         am a supportive, ambitious, and innovative individual who enjoys
                         problem solving! 
                     </p>
@@ -41,13 +41,14 @@ const About = () => {
                     <p>
                         Outside of coding, I enjoy baking with my mom, reading at least 10 pages a
                         day (current book: Atomic Habits by James Clear), and hitting the gym. I also
-                        am a dog mom to a beautiful 1-year-old yorkie named Mimi!
+                        am a dog mom to a beautiful 1-year-old Zuchon puppy named Mimi!
                     </p>
                     <div className='photos'>
                         <img className="pics" src={Me} alt="me" />
                         <img className="pics" src={Myla} alt="myla" />
                     </div>
                 </div>
+                <div className='cube'>
                 <div className='stage-cube-cont'>
                     <div className='cubespinner'>
                         <div className='face1'>
@@ -69,6 +70,7 @@ const About = () => {
                             <FontAwesomeIcon icon={faHtml5} color="#7F2524"/>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
             <Loader type="pacman" />

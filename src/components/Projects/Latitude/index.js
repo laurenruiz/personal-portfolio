@@ -17,28 +17,24 @@ const Latitude = () => {
         <>
             <div className='container latitude-page'>
                 <div className='text-zone'>
-                    <h1>
-                        <AnimatedLetters
-                            letterClass={letterClass}
-                            strArray={['D.E.', 'Shaw\'s', 'Latitude', 'Fellowship']}
-                            idx={25}
-                        />
-                    </h1>
-                    <h4>
-                        I had the most amazing and insightful experience at the D.E. Shaw Group's Latitude Fellowship 2024! 
-                        I am beyond honored to have been able to attend!
-                    </h4>
-                    <img className="images" src={LatitudePic} alt="latitude pic" />
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
+                    <div className='heading'>
+                        <h1>
+                            <AnimatedLetters
+                                letterClass={letterClass}
+                                strArray={['D.E.', 'Shaw\'s', 'Latitude', 'Fellowship']}
+                                idx={15}
+                            />
+                        </h1>
+                    </div>
+                    <div className='content'>
+                        <p>
+                            I had the most amazing and insightful experience at the D.E. Shaw Group's Latitude Fellowship 2024! 
+                            I am beyond honored to have been able to attend!
+                        </p>
+                        <div className='picture'>
+                            <img className="images" src={LatitudePic} alt="latitude pic" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <Loader type="pacman" />

@@ -51,11 +51,11 @@ const sendEmail = (e) => {
         <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
               <ul>
-              <li className="half">
+                <li className="half">
                   <input placeholder="Name" type="text" name="name" required />
                   <input placeholder="Email" type="email" name="email" required />
                 </li>
-                <li>
+                <li className='subject'>
                   <input
                     placeholder="Subject"
                     type="text"
@@ -71,17 +71,19 @@ const sendEmail = (e) => {
                   ></textarea>
                 </li>
                 <li>
-                  <input type="submit" className="send-button" value="SEND" />
+                  <div className='button'>
+                    <input type="submit" className="send-button" value="SEND" />
+                  </div>
                 </li>
               </ul>
             </form>
             </div> 
-            <p>
+            {/* <p>
                 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-            </p>         
+            </p>          */}
         </div>
-        <br></br>
-        <br></br>
+        {/* <br></br>
+        <br></br> */}
       </div>
       <Loader type="pacman" />
     </>

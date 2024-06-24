@@ -1,231 +1,606 @@
-.stage-cube-cont {
-    width: 50%;
-    height: 100%;
-    margin-top: -10vh;
-    display: flex; /* Use Flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    overflow: hidden;
-    position: relative; /* Make sure it's positioned correctly */
-}
-
-.cubespinner {
-    animation-name: spincube;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 12s;
-    transform-style: preserve-3d;
-    transform-origin: center; /* Center the rotation point */
-    width: 200px; /* Set a fixed width */
-    height: 200px; /* Set a fixed height */
-
-    div {
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        border: 1px solid #F2C5C7;
-        background: rgba(255, 255, 255, 0.15);
-        text-align: center;
-        font-size: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: 0 0 20px 0px lightyellow;
-    }
-
-    .face1 {
-        transform: translateZ(100px);
-    }
-    .face2 {
-        transform: rotateY(90deg) translateZ(100px);
-    }
-    .face3 {
-        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
-    }
-    .face4 {
-        transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
-    }
-    .face5 {
-        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
-    }
-    .face6 {
-        transform: rotateX(-90deg) translateZ(100px);
-    }
-}
-
-@keyframes spincube {
-    from,
-    to {
-        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-    }
-    16% {
-        transform: rotateY(-90deg) rotateZ(90deg);
-    }
-    33% {
-        transform: rotateY(-90deg) rotateX(90deg);
-    }
-    50% {
-        transform: rotateY(-180deg) rotateZ(90deg);
-    }
-    66% {
-        transform: rotateY(-270deg) rotateX(90deg);
-    }
-    83% {
-        transform: rotateX(90deg);
-    }
-}
-
-
-
-
-@media (max-width: 768px) {
-    
-    .about-page {
-        //max-height: 100%;
-        height: 100vh; /* Full viewport height */
-        //padding-bottom: 20vh; /* Add padding at the bottom */
-        overflow-y: auto;
-        display: flex;
-        flex-direction: column;
-        //text-align: center;
-        justify-content: flex-start;
-        align-items: center; /* Center elements horizontally */
-        height: 100vh; /* Make sure the height is full viewport height */
-
-        //margin-bottom: 30vh;
-        .text-zone {
-            p{
-                font-size: large;
-            }
-            .photos{
-                .pics{
-                    width: 60vw;
-                }
-                flex-direction: column;
-            }
+.about-page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .cube{
+        width: 512px;
+        height: 100%;
+        .stage-cube-cont {
+            width: 100%;
+            height: 100%;
+            display: flex; /* Use Flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
             overflow: hidden;
-            order: 1;
-            min-width: 50%;
-            box-sizing: border-box;
-            padding-top: 5%;
-            padding-bottom: calc(300px + 100vh);
-            max-width: 90%; /* Allow text zone to take full width on smaller screens */
-            h1 {
-                text-align: left;
-                font-size: 10vw;
+            position: relative; /* Make sure it's positioned correctly */
+        }
+        
+        .cubespinner {
+            animation-name: spincube;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-duration: 12s;
+            transform-style: preserve-3d;
+            transform-origin: center; /* Center the rotation point */
+            width: 204px; // needs to match face of cube width
+            height: 204px; //needs to match face of cube height
+        
+            div {
+                position: absolute;
+                width: 204px;
+                height: 204px;
+                border: 1px solid #F2C5C7;
+                background: rgba(255, 255, 255, 0.15);
+                text-align: center;
+                font-size: 102px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 0 20px 0px rgb(254, 254, 174);
             }
-            h1::before{
-                font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
-                bottom: 2.0vw;
+        
+            // change translations to half of height/width or roughly if cube with borders is made
+            // (in that case, the length and width will be decremented after cube is configured)
+            .face1 {
+                transform: translateZ(102px);
             }
-            h1::after {
-                font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
-                bottom: -2.5vw;
+            .face2 {
+                transform: rotateY(90deg) translateZ(102px);
             }
-    
-            p{
-                padding-left: 5vh;
-                padding-right: 5vh;
+            .face3 {
+                transform: rotateY(90deg) rotateX(90deg) translateZ(102px);
+            }
+            .face4 {
+                transform: rotateY(180deg) rotateZ(90deg) translateZ(102px);
+            }
+            .face5 {
+                transform: rotateY(-90deg) rotateZ(90deg) translateZ(102px);
+            }
+            .face6 {
+                transform: rotateX(-90deg) translateZ(102px);
             }
         }
         
-
-        
-
-    }
-
-    .stage-cube-cont {
-        order: 2;
-        padding-bottom: 50%;
-        margin-left: 64px;
-        display: flex; /* Use Flexbox */
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Align towards the top */
-        width: 100%; /* Ensure it takes full width */
-        margin-top: 80px; /* Adjust as necessary to position from the top */
-        margin-bottom: 150px; /* Adjust as necessary to position from the top */
-        overflow: visible;
-    }
-
-    .cubespinner {
-        width: 150px;
-        height: 150px;
-        transform-origin: center;
-    }
-}
-
-@media (max-width: 450px) {
-    
-    .about-page {
-        //max-height: 100%;
-        height: 100vh; /* Full viewport height */
-        //padding-bottom: 20vh; /* Add padding at the bottom */
-        overflow-y: auto;
-        display: flex;
-        flex-direction: column;
-        //text-align: center;
-        justify-content: flex-start;
-        align-items: center; /* Center elements horizontally */
-        height: 100vh; /* Make sure the height is full viewport height */
-
-        //margin-bottom: 30vh;
-        .text-zone {
-            p{
-                font-size: large;
+        @keyframes spincube {
+            from,
+            to {
+                transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
             }
-            .photos{
-                .pics{
-                    width: 60vw;
-                }
-                flex-direction: column;
+            16% {
+                transform: rotateY(-90deg) rotateZ(90deg);
             }
-            overflow: hidden;
-            order: 1;
-            min-width: 50%;
-            box-sizing: border-box;
-            padding-top: 5%;
-            padding-bottom: calc(600px + 110vh);
-            max-width: 90%; /* Allow text zone to take full width on smaller screens */
-            h1 {
-                text-align: left;
-                font-size: 10vw;
+            33% {
+                transform: rotateY(-90deg) rotateX(90deg);
             }
-            h1::before{
-                font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
-                bottom: 2.0vw;
+            50% {
+                transform: rotateY(-180deg) rotateZ(90deg);
             }
-            h1::after {
-                font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
-                bottom: -2.5vw;
+            66% {
+                transform: rotateY(-270deg) rotateX(90deg);
             }
-    
-            p{
-                padding-left: 5vh;
-                padding-right: 5vh;
+            83% {
+                transform: rotateX(90deg);
             }
         }
+    }
+    
+    .text-zone
+    {
+        vertical-align: middle;
+        width: calc(100% - 608px);
+        height: 100%;
+        margin-left: 30px; //note padding + margin == nav-bar width
+        padding: 0px 20px;
+        h1 {
+            font-size: 700%;
+            font-family: 'Coolvetica';
+            color: #fff;
+            font-weight: 400;
+            // margin-left: 64px;
+            // margin-top: 0;
+            position: relative;
+            // margin-bottom: 3.75vw;
+
+            //left: 10px;
+            &::before{
+                color: #ffffff;
+                content: '<h1>';
+                font-family: 'La Belle Aurore';
+                font-size: 20px;
+                position: absolute;
+                //margin-top: -10px;
+                left: -10px;
+                top: -10px;
+                opacity: 0.6;
+                //line-height: 18px;
+            }
+
+            &::after {
+                color: #ffffff;
+                content: '<h1/>';
+                font-family: 'La Belle Aurore';
+                font-size: 20px;
+                //line-height: 18px;
+                position: absolute;
+                left: -12px;
+                bottom: -15px;
+                //margin-left: 20px;
+                opacity: 0.6;
+            }
+        }
+        p {
+            //margin-left: 2vw;
+            font-size: 250%;
+            color: #fff;
+            font-family: Georgia;
+            font-weight: 500;
+            //min-width: fit-content;
+            animation: pulse 1s;
+            word-wrap:break-word
+
+            &:nth-of-type(1) {
+                animation-delay: 1.1s;
+            }
+
+            &:nth-of-type(2) {
+                animation-delay: 1.2s;
+            }
+
+            &:nth-of-type(3) {
+                animation-delay: 1.3s;
+            }
+        }
+        .photos{
+            height: 30%;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            .pics{
+                //margin-bottom: 5vh;
+                //margin-left: 40px;
+                //width: 15vw;
+                height: 100%;
+                aspect-ratio: 1;
+                //max-width: 250px;
+                //display: block;
+                animation: pulse 1s;
+                animation-delay: 1.4s;
+            }
+        }
+    }
+    
+    
+
+
+
+
+
+    // .text-zone{
+//         width: auto;
+//     //     //overflow-y: auto; /* Enable vertical scrolling */
+//     //     position: relative;
+//     //     //left: 12%;
+//     //     margin-left: 64px;
+//     //     //top: 50%;
+//     //     max-width: 50%;
+//     //     max-height: 90%;
+//     //     margin-bottom: 4vh;
+
+
+
+
+//         .photos{
+//             .pics{
+//                 //margin-bottom: 5vh;
+//                 //margin-left: 40px;
+//                 //width: 15vw;
+//                 width: auto;
+//                 max-height: 20px;
+//                 //max-width: 250px;
+//                 height: 25%;
+//                 aspect-ratio: 1;
+//                 //display: block;
+//                 animation: pulse 1s;
+//                 animation-delay: 1.4s;
+//             }
+//             max-height: 25%;
+//             //margin-top: 5vh;
+//             display: flex;
+//             justify-content: space-evenly;
+//             align-items: center;
+//         }
+//     }
+
+    
+
+    .text-animate-hover{
+        &:hover {
+            color: #f3aca6;
+        }
+    }
+
+} 
+
+//widths: 1025-1919px
+@media (max-width: 1919px) {
+    .about-page {
+        .cube {
+            width: 450px;
+            height: 100%;           
+            .cubespinner {
+                width: 165px; // needs to match face of cube width
+                height: 165px; //needs to match face of cube height         
+                div {
+                    width: 165px;
+                    height: 165px;
+                    font-size: 90px;
+                }
+            
+                .face1 {
+                    transform: translateZ(90px);
+                }
+                .face2 {
+                    transform: rotateY(90deg) translateZ(90px);
+                }
+                .face3 {
+                    transform: rotateY(90deg) rotateX(90deg) translateZ(90px);
+                }
+                .face4 {
+                    transform: rotateY(180deg) rotateZ(90deg) translateZ(90px);
+                }
+                .face5 {
+                    transform: rotateY(-90deg) rotateZ(90deg) translateZ(90px);
+                }
+                .face6 {
+                    transform: rotateX(-90deg) translateZ(90px);
+                }
+            }
+        }
+        .text-zone
+        {
+            width: 55%;
+            max-width: calc(100% - 546px);
+            h1 {
+                font-size: 500%;
+            }
+            p {
+                font-size: 165%;
+            }
+            .photos{
+                height: 25%;
+            }
+        }
+    }
+} 
+
+// //widths: 501-1024px
+// @media (max-width: 1024px) {
+//     .about-page {
+//         .cube {
+//             width: 450px;
+//             height: 100%;           
+//             .cubespinner {
+//                 width: 165px; // needs to match face of cube width
+//                 height: 165px; //needs to match face of cube height         
+//                 div {
+//                     width: 165px;
+//                     height: 165px;
+//                     font-size: 90px;
+//                 }
+            
+//                 .face1 {
+//                     transform: translateZ(90px);
+//                 }
+//                 .face2 {
+//                     transform: rotateY(90deg) translateZ(90px);
+//                 }
+//                 .face3 {
+//                     transform: rotateY(90deg) rotateX(90deg) translateZ(90px);
+//                 }
+//                 .face4 {
+//                     transform: rotateY(180deg) rotateZ(90deg) translateZ(90px);
+//                 }
+//                 .face5 {
+//                     transform: rotateY(-90deg) rotateZ(90deg) translateZ(90px);
+//                 }
+//                 .face6 {
+//                     transform: rotateX(-90deg) translateZ(90px);
+//                 }
+//             }
+//         }
+//         .text-zone
+//         {
+//             width: calc(100% - 546px);
+//             h1 {
+//                 font-size: 600%;
+//             }
+//             p {
+//                 text-align: center;
+//                 font-size: 220%;
+//             }
+//             .photos{
+//                 height: 20%;
+//             }
+//         }
+//     }
+// } 
+
+//widths: 501-1024px
+@media (max-width: 1024px) {
+    .about-page {
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow-y: scroll;
+        .cube {
+            order: 1;
+            width: 500px;
+            height: 375px;
+            .stage-cube-cont{   
+                height: inherit;      
+                .cubespinner {
+                    width: 180px; // needs to match face of cube width
+                    height: 180px; //needs to match face of cube height         
+                    div {
+                        width: inherit;
+                        height: inherit;
+                        font-size: 100px;
+                    }
+                
+                    .face1 {
+                        transform: translateZ(100px);
+                    }
+                    .face2 {
+                        transform: rotateY(90deg) translateZ(100px);
+                    }
+                    .face3 {
+                        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+                    }
+                    .face4 {
+                        transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+                    }
+                    .face5 {
+                        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+                    }
+                    .face6 {
+                        transform: rotateX(-90deg) translateZ(100px);
+                    }
+                }
+            }
+        }
+        .text-zone
+        {
+            order: 2;
+            width: 84%;
+            max-width: 100%;
+            margin-left: 0px;
+            padding: 0px 8%;
+            h1 {
+                font-size: 600%;
+            }
+            p {
+                text-align: center;
+                font-size: 250%;
+            }
+            .photos{
+                height: 30%;
+            }
+        }
+    }
+} 
+
+//phones 500 px and under
+@media (max-width: 500px) {
+    .about-page {
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow-y: scroll;
+        .cube {
+            order: 1;
+            width: 500px;
+            height: 375px;
+            .stage-cube-cont{   
+                height: inherit;      
+                .cubespinner {
+                    width: 180px; // needs to match face of cube width
+                    height: 180px; //needs to match face of cube height         
+                    div {
+                        width: inherit;
+                        height: inherit;
+                        font-size: 100px;
+                    }
+                
+                    .face1 {
+                        transform: translateZ(100px);
+                    }
+                    .face2 {
+                        transform: rotateY(90deg) translateZ(100px);
+                    }
+                    .face3 {
+                        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+                    }
+                    .face4 {
+                        transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+                    }
+                    .face5 {
+                        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+                    }
+                    .face6 {
+                        transform: rotateX(-90deg) translateZ(100px);
+                    }
+                }
+            }
+        }
+        .text-zone
+        {
+            order: 2;
+            width: 84%;
+            max-width: 100%;
+            margin-left: 0px;
+            padding: 0px 8%;
+            h1 {
+                font-size: 600%;
+            }
+            p {
+                text-align: center;
+                font-size: 250%;
+            }
+            .photos{
+                flex-direction: column;
+                height: 100%;
+                aspect-ratio: 1;
+            }
+        }
+    }
+} 
+
+    
+//     .about-page {
+//         //max-height: 100%;
+//         height: 100vh; /* Full viewport height */
+//         //padding-bottom: 20vh; /* Add padding at the bottom */
+//         overflow-y: auto;
+//         display: flex;
+//         flex-direction: column;
+//         //text-align: center;
+//         justify-content: flex-start;
+//         align-items: center; /* Center elements horizontally */
+//         height: 100vh; /* Make sure the height is full viewport height */
+
+//         //margin-bottom: 30vh;
+//         .text-zone {
+//             p{
+//                 font-size: large;
+//             }
+//             .photos{
+//                 .pics{
+//                     width: 60vw;
+//                 }
+//                 flex-direction: column;
+//             }
+//             overflow: hidden;
+//             order: 1;
+//             min-width: 50%;
+//             box-sizing: border-box;
+//             padding-top: 5%;
+//             padding-bottom: calc(300px + 100vh);
+//             max-width: 90%; /* Allow text zone to take full width on smaller screens */
+//             h1 {
+//                 text-align: left;
+//                 font-size: 10vw;
+//             }
+//             h1::before{
+//                 font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
+//                 bottom: 2.0vw;
+//             }
+//             h1::after {
+//                 font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
+//                 bottom: -2.5vw;
+//             }
+    
+//             p{
+//                 padding-left: 5vh;
+//                 padding-right: 5vh;
+//             }
+//         }
         
 
         
 
-    }
+//     }
 
-    .stage-cube-cont {
-        order: 2;
-        padding-bottom: 50%;
-        margin-left: 64px;
-        display: flex; /* Use Flexbox */
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Align towards the top */
-        width: 100%; /* Ensure it takes full width */
-        margin-top: 80px; /* Adjust as necessary to position from the top */
-        margin-bottom: 150px; /* Adjust as necessary to position from the top */
-        overflow: visible;
-    }
+//     .stage-cube-cont {
+//         order: 2;
+//         padding-bottom: 50%;
+//         margin-left: 64px;
+//         display: flex; /* Use Flexbox */
+//         justify-content: center; /* Center horizontally */
+//         align-items: center; /* Align towards the top */
+//         width: 100%; /* Ensure it takes full width */
+//         margin-top: 80px; /* Adjust as necessary to position from the top */
+//         margin-bottom: 150px; /* Adjust as necessary to position from the top */
+//         overflow: visible;
+//     }
 
-    .cubespinner {
-        width: 150px;
-        height: 150px;
-        transform-origin: center;
-    }
-}
+//     .cubespinner {
+//         width: 150px;
+//         height: 150px;
+//         transform-origin: center;
+//     }
+// }
+
+// @media (max-width: 450px) {
+    
+//     .about-page {
+//         //max-height: 100%;
+//         height: 100vh; /* Full viewport height */
+//         //padding-bottom: 20vh; /* Add padding at the bottom */
+//         overflow-y: auto;
+//         display: flex;
+//         flex-direction: column;
+//         //text-align: center;
+//         justify-content: flex-start;
+//         align-items: center; /* Center elements horizontally */
+//         height: 100vh; /* Make sure the height is full viewport height */
+
+//         //margin-bottom: 30vh;
+//         .text-zone {
+//             p{
+//                 font-size: large;
+//             }
+//             .photos{
+//                 .pics{
+//                     width: 60vw;
+//                 }
+//                 flex-direction: column;
+//             }
+//             overflow: hidden;
+//             order: 1;
+//             min-width: 50%;
+//             box-sizing: border-box;
+//             padding-top: 5%;
+//             padding-bottom: calc(600px + 110vh);
+//             max-width: 90%; /* Allow text zone to take full width on smaller screens */
+//             h1 {
+//                 text-align: left;
+//                 font-size: 10vw;
+//             }
+//             h1::before{
+//                 font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
+//                 bottom: 2.0vw;
+//             }
+//             h1::after {
+//                 font-size: 3.5vw; /* Adjust pseudo-element font-size for smaller screens */
+//                 bottom: -2.5vw;
+//             }
+    
+//             p{
+//                 padding-left: 5vh;
+//                 padding-right: 5vh;
+//             }
+//         }
+        
+
+        
+
+//     }
+
+//     .stage-cube-cont {
+//         order: 2;
+//         padding-bottom: 50%;
+//         margin-left: 64px;
+//         display: flex; /* Use Flexbox */
+//         justify-content: center; /* Center horizontally */
+//         align-items: center; /* Align towards the top */
+//         width: 100%; /* Ensure it takes full width */
+//         margin-top: 80px; /* Adjust as necessary to position from the top */
+//         margin-bottom: 150px; /* Adjust as necessary to position from the top */
+//         overflow: visible;
+//     }
+
+//     .cubespinner {
+//         width: 150px;
+//         height: 150px;
+//         transform-origin: center;
+//     }
+// }

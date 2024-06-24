@@ -7,8 +7,8 @@ import HeadShot from '../../assets/images/laurenruiz@vt.edu-7.jpg'
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const introArray = ['Hi, I\'m']
-    const nameArray = ['Lauren Ruiz,']
+    const introArray = ['Hi,', 'I\'m']
+    const nameArray = ['Lauren','Ruiz-Arenas,']
     const jobArray = ['Software', 'Engineering', 'Student']
 
     useEffect(() => {
@@ -38,12 +38,14 @@ const Home = () => {
                         <br />
                         <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={20} />
                     </h1>
-                    <h2>Rising Junior at Virginia Polytechnic State University and Institute</h2>
+                    <h2>Rising Junior at Virginia Tech</h2>
+                    <div className='button'>
                     <Link to="/contact" className='flat-button'>CONTACT ME</Link>
+                    </div>
+                    {/* <br></br>
                     <br></br>
                     <br></br>
-                    <br></br>
-                    <br></br>
+                    <br></br> */}
                 </div>
             </div>
             <Loader type="pacman" />

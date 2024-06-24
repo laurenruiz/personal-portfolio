@@ -17,28 +17,24 @@ const LSLS = () => {
         <>
             <div className='container lsls-page'>
                 <div className='text-zone'>
-                    <h1>
-                        <AnimatedLetters
-                            letterClass={letterClass}
-                            strArray={['Latinx', 'Student', 'Leadership', 'Summit']}
-                            idx={22}
-                        />
-                    </h1>
-                    <h4>
-                        I had the most amazing and insightful experience at Google's Latinx Student Leadership Summit 2024! I am beyond
-                        honored to have been able to attend!
-                    </h4>
-                    <img className="images" src={GooglePic} alt="connect violet pic" />
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
+                    <div className='heading'>
+                        <h1>
+                            <AnimatedLetters
+                                letterClass={letterClass}
+                                strArray={['Latinx', 'Student', 'Leadership', 'Summit']}
+                                idx={22}
+                            />
+                        </h1>
+                    </div>
+                    <div className='content'>
+                        <p>
+                            I had the most amazing and insightful experience at Google's Latinx Student Leadership Summit 2024! I am beyond
+                            honored to have been able to attend!
+                        </p>
+                        <div className='picture'>
+                            <img className="images" src={GooglePic} alt="connect violet pic" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <Loader type="pacman" />

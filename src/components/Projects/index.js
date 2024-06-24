@@ -1,5 +1,5 @@
 import './index.scss'
-import AnimatedLetters from '../AnimatedLetters'
+import AnimatedLetters from '../../components/AnimatedLetters'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
@@ -24,19 +24,21 @@ const Projects = () => {
         <>
             <div className='container projects-page'>
                 <div className='text-zone'>
-                    <h1>
-                        <AnimatedLetters
-                            letterClass={letterClass}
-                            strArray={['My', 'Projects', 'and','Experiences']}
-                            idx={12}
-                        />
-                    </h1>
-                    <div className='images'>
+                    <div className='heading'>
+                        <h1>
+                            <AnimatedLetters
+                                letterClass={letterClass}
+                                strArray={['My', 'Projects', 'and','Experiences']}
+                                idx={12}
+                            />
+                        </h1>
+                    </div>
+                    <div className='row'>
                         <div className='project'>
                             <Link to="/projects/personal-portfolio">
                                 <img className="pics" src={PortfolioSS} alt="cv pic" />
                             </Link>
-                            <h3>Personal<br></br>Portfolio!</h3>
+                            <h3>Personal Portfolio!</h3>
                         </div>
                         <div className='project'>
                             <Link to="/projects/connect-violet">
@@ -56,7 +58,7 @@ const Projects = () => {
                         </div>
                         
                     </div>
-                    <div className='images'>
+                    <div className='row'>
                         <div className='project'>
                             <Link to="/projects/LSLS">
                                 <img className="pics" src={GooglePic} alt="cv pic" />
@@ -68,7 +70,7 @@ const Projects = () => {
                                     <img className="pics" src={LatitudePic} alt="icon button for walmart" />
                             </Link>
                             <div className='title'>
-                                <h3>Latitude<br></br>Fellowship!</h3>
+                                <h3>Latitude Fellowship!</h3>
                             </div>
                         </div>
                         <div className='project'>
@@ -76,7 +78,7 @@ const Projects = () => {
                                     <img className="pics" src={WalmartPic} alt="icon button for walmart" />
                             </Link>
                             <div className='title'>
-                                <h3>Sophomore<br></br>Summit!</h3>
+                                <h3>Sophomore Summit!</h3>
                             </div>
                         </div>
                     </div>

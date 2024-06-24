@@ -6,6 +6,11 @@
     min-width: 10px;
 }
 
+.word{
+    display: inline-block;
+    word-wrap: break-word;
+}
+
 .text-animate-hover {
     min-width: 10px;
     display: inline-block;

@@ -20,21 +20,23 @@ const PersonalPortfolio = () => {
         <>
             <div className='container personal-port-page'>
                 <div className='text-zone'>
-                    <h1>
-                        <AnimatedLetters
-                            letterClass={letterClass}
-                            strArray={['Personal', 'Portfolio']}
-                            idx={15}
-                        />
-                    </h1>
-                    <h4>
-                        Using this youtube video, I was able to create this personal portfolio! This portfolio really
-                        helped me strengthened my knowledge and experience in React, and in HTML, CSS, and JavaScript.
-                        It has also given me an opportunity to explore my creative side and my writing skills. I hope to
-                        expand upon this portfolio by including other personal projects and class projects.
-                    </h4>
-                    <div className='images'>
-                        <div className='project'>
+                    <div className='heading'>
+                        <h1>
+                            <AnimatedLetters
+                                letterClass={letterClass}
+                                strArray={['Personal', 'Portfolio']}
+                                idx={15}
+                            />
+                        </h1>
+                    </div>
+                    <div className='content'>
+                        <p>
+                            Using this youtube video, I was able to create this personal portfolio! This portfolio really
+                            helped me strengthened my knowledge and experience in React, and in HTML, CSS, and JavaScript.
+                            It has also given me an opportunity to explore my creative side and my writing skills. I hope to
+                            expand upon this portfolio by including other personal projects and class projects.
+                        </p>
+                        <div className='picture'>
                             <Link to="/">
                                     <img className="pics" src={PortfolioSS} alt="portfolio pic" />
                             </Link>
@@ -42,11 +44,14 @@ const PersonalPortfolio = () => {
                                 <h3>Personal Portfolio!</h3>
                             </div>
                         </div>
-                        <div className='project'>
+                        <p>
+                            Lorem Ipsum.
+                        </p>
+                        <div className='picture'>
                             <Link to="https://www.youtube.com/watch?v=bmpI252DmiI" target="_blank">
                                 <img className="pics" src={YTVidSS} alt="yt vid pic" />
                             </Link>
-                            <h3>Video Tutorial Followed!</h3>
+                            <h3>Click to watch the video tutorial I followed!</h3>
                         </div>
                     </div>
                 </div>

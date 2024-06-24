@@ -17,28 +17,24 @@ const Walmart = () => {
         <>
             <div className='container walmart-page'>
                 <div className='text-zone'>
-                    <h1>
-                        <AnimatedLetters
-                            letterClass={letterClass}
-                            strArray={['Walmart', 'Sophomore', 'Summit']}
-                            idx={19}
-                        />
-                    </h1>
-                    <h4>
-                        I had the most amazing and insightful experience at Walmart and Sam's Club Sophomore Summit 2024! I am beyond
-                        honored to have been able to attend!
-                    </h4>
-                    <img className="images" src={WalmartPic} alt="walmart pic" />
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
+                    <div className='heading'>
+                        <h1>
+                            <AnimatedLetters
+                                letterClass={letterClass}
+                                strArray={['Walmart', 'Sophomore', 'Summit']}
+                                idx={19}
+                            />
+                        </h1>
+                    </div>
+                    <div className='content'>
+                        <p>
+                            I had the most amazing and insightful experience at Walmart and Sam's Club Sophomore Summit 2024! I am beyond
+                            honored to have been able to attend!
+                        </p>
+                        <div className='picture'>
+                            <img className="images" src={WalmartPic} alt="walmart pic" />
+                        </div>
+                    </div>
                 </div>
             </div>
             <Loader type="pacman" />

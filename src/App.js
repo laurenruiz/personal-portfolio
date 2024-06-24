@@ -26,7 +26,7 @@ function App() {
         <Route path="/projects/latitude" element ={<Latitude />} />
         <Route path="/projects/walmart" element ={<Walmart />} />
         <Route path="/projects/connect-violet" element ={<ConnectViolet />} />
-        <Route path="/projects/personal-portfolio" element ={<PersonalPortfolio />} />
+        <Route path="/projects/personal-portfolio" element ={<PersonalPortfolio />} /> 
         <Route path="/contact" element ={<Contact />} />
         </Route>
       </Routes>
