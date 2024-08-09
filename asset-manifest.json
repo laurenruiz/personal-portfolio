@@ -1,14 +1,17 @@
 {
   "files": {
     "main.css": "/personal-portfolio/static/css/main.af087e03.css",
-    "main.js": "/personal-portfolio/static/js/main.a2da4e8f.js",
+    "main.js": "/personal-portfolio/static/js/main.85c72c06.js",
     "static/js/453.27c8b13a.chunk.js": "/personal-portfolio/static/js/453.27c8b13a.chunk.js",
     "static/media/laurenruiz@vt.edu-7.jpg": "/personal-portfolio/static/media/laurenruiz@vt.edu-7.7098ca09d4be4093f378.jpg",
     "static/media/photo_of_me.JPG": "/personal-portfolio/static/media/photo_of_me.f94b5b5f01a0d2c891fa.JPG",
     "static/media/Latitude.jpg": "/personal-portfolio/static/media/Latitude.c78eafe824e521626009.jpg",
+    "static/media/word-cloud.png": "/personal-portfolio/static/media/word-cloud.1f8cf74c51eb867754ef.png",
     "static/media/LSLS.JPG": "/personal-portfolio/static/media/LSLS.06a0f6b4c733c5e74410.JPG",
     "static/media/youtube_picture.png": "/personal-portfolio/static/media/youtube_picture.2202d632f3b2d6662a3c.png",
+    "static/media/devtools.png": "/personal-portfolio/static/media/devtools.fa62498abe8f4e5cb91b.png",
     "static/media/portfolio.png": "/personal-portfolio/static/media/portfolio.7f5bc80f176baa322d23.png",
+    "static/media/Vertical_sidebar.png": "/personal-portfolio/static/media/Vertical_sidebar.6d47371b940aad7daa39.png",
     "static/media/myla.jpg": "/personal-portfolio/static/media/myla.5539ecf5e7bf54076608.jpg",
     "static/media/connect-violet.jpg": "/personal-portfolio/static/media/connect-violet.42cc91893cd75463f918.jpg",
     "static/media/Walmart.jpg": "/personal-portfolio/static/media/Walmart.f0b8517b44b5b46389aa.jpg",
@@ -17,11 +20,11 @@
     "static/media/CoolveticaRg-Regular.woff2": "/personal-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/personal-portfolio/index.html",
     "main.af087e03.css.map": "/personal-portfolio/static/css/main.af087e03.css.map",
-    "main.a2da4e8f.js.map": "/personal-portfolio/static/js/main.a2da4e8f.js.map",
+    "main.85c72c06.js.map": "/personal-portfolio/static/js/main.85c72c06.js.map",
     "453.27c8b13a.chunk.js.map": "/personal-portfolio/static/js/453.27c8b13a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.af087e03.css",
-    "static/js/main.a2da4e8f.js"
+    "static/js/main.85c72c06.js"
   ]
 }
