@@ -1,72 +1,84 @@
 # personal-portfolio
+Lauren Ruiz Personal Portfolio
 
-# Getting Started with Create React App
+Welcome to my personal portfolio website repository! This project serves as a showcase of my skills, projects, and experiences in web development and design. Whether you're a potential employer, collaborator, or simply curious, feel free to explore my work and get in touch.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Table of Contents
+-----------------
+- About
+- Features
+- Technologies Used
+- Getting Started
+- Deployment
+- Contributing
+- Contact
+- License
 
-## Available Scripts
+About
+-----
+This personal portfolio website is designed to provide an overview of my background, skills, and projects. It includes sections on my professional experience, a gallery of projects, and a blog where I share insights about web development, design, and more.
 
-In the project directory, you can run:
+Features
+--------
+- Responsive Design: Ensures optimal viewing across various devices.
+- Interactive UI: Engaging animations and interactive elements to showcase my projects.
+- Project Gallery: A curated selection of projects with detailed descriptions and live demos.
+- Blog Section: Regular posts on industry trends, tutorials, and personal reflections.
+- Contact Form: A straightforward way for visitors to reach out for collaboration or inquiries.
 
-### `npm start`
+Technologies Used
+-----------------
+- HTML5: For structure and styling.
+- SCSS: Employed for advanced styling and better organization of CSS.
+- JavaScript: To add interactivity and enhance user experience.
+- React: Used to build a dynamic and modern user interface.
+- EmailJS: Integrated for handling email functionality directly from the client-side.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Getting Started
+---------------
+To run this project locally:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
+   git clone https://github.com/laurenruiz/personal-portfolio.git
 
-### `npm test`
+2. Navigate to the project directory:
+   cd personal-portfolio
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Install dependencies:
+   If you're using a package manager (e.g., npm or yarn), install the necessary packages:
+     npm install
+   or
+     yarn install
 
-### `npm run build`
+4. Run the development server:
+     npm start
+   or
+     yarn start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Open your browser and visit:
+   http://localhost:3000
+   (Note: Adjust the URL/port as needed based on your configuration.)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Deployment
+----------
+The website is deployed using [Deployment Service Name] (e.g., GitHub Pages, Netlify, Vercel). For any updates or changes pushed to the main branch, the site is automatically rebuilt and deployed.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Contributing
+------------
+I welcome contributions that improve the functionality, design, or performance of the website. To contribute:
 
-### `npm run eject`
+1. Fork the repository.
+2. Create a new branch (git checkout -b feature/your-feature-name).
+3. Commit your changes (git commit -m 'Add new feature').
+4. Push to the branch (git push origin feature/your-feature-name).
+5. Open a Pull Request with a detailed description of your changes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Contact
+-------
+Feel free to reach out with any questions, suggestions, or opportunities:
+- Email: laurenruiz@vt.edu
+- LinkedIn: https://www.linkedin.com/in/lauren-ruiz-arenas
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+License
+-------
+This project is licensed under the MIT License. See the LICENSE file for details.

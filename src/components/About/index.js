@@ -39,6 +39,13 @@ const About = () => {
                         learning by doing, which can be seen through my projects!
                     </p>
                     <p>
+                        On campus, I am the Social Media Chair for Computer Science Careers, on Dean's
+                        Team, a select group of engineering students that welcome prospective students
+                        to VT, an analyst with the Consulting Group at VT, and an analyst in training with
+                        the Student-managed Endowment of Educational Developement (SEED). I am also a 
+                        proud <a href="https://eng.vt.edu/ceed/ceed-undergraduate-programs/clark-scholars-program.html" target="_blank" rel="noreferrer" style={{color:'#fff'}}>A. James Clark Scholar</a> and <a href="https://eng.vt.edu/ceed/studentinvolvement/ceedoutstandingstudents/outstanding-students-october-2024/lauren-ruiz-arenas.html" target="_blank" rel="noreferrer" style={{color:'#fff'}}>VT CEED's October Outstanding Student of the Month!</a>
+                    </p>
+                    <p>
                         Outside of coding, I enjoy baking with my mom, reading at least 10 pages a
                         day (current book: Atomic Habits by James Clear), and hitting the gym. I also
                         am a dog mom to a beautiful 1-year-old Zuchon puppy named Mimi!
