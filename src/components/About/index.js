@@ -28,27 +28,31 @@ const About = () => {
                         />
                     </h1>
                     <p>
-                        Hi! I'm Lauren, I'm a rising junior in Computer Science at Virginia Tech! I
-                        am a supportive, ambitious, and innovative individual who enjoys
-                        problem solving! 
+                        Hi, I’m Lauren, a software engineer passionate about building scalable systems, 
+                        solving complex problems, and continuously growing through new challenges.
                     </p>
                     <p>
-                        My favorite programming language is Java, however, I also have experience
-                        in Python, C, Linux, HTML, CSS, JavaScript and MATLab. 3D Modeling,
-                        specifically in AutoDesk Inventor, is something I am also good at. I enjoy
-                        learning by doing, which can be seen through my projects!
+                        I graduated from Virginia Tech with a degree in Computer Science, where I developed a 
+                        strong foundation in software engineering, backend development, and infrastructure. 
+                        Through internships at Parsons Corporation and Salesforce, I gained hands-on experience
+                        building software, working with large-scale systems, and collaborating with 
+                        engineering teams.
                     </p>
                     <p>
-                        On campus, I am the Social Media Chair for Computer Science Careers, on Dean's
-                        Team, a select group of engineering students that welcome prospective students
-                        to VT, an analyst with the Consulting Group at VT, and an analyst in training with
-                        the Student-managed Endowment of Educational Developement (SEED). I am also a 
-                        proud <a href="https://eng.vt.edu/ceed/ceed-undergraduate-programs/clark-scholars-program.html" target="_blank" rel="noreferrer" style={{color:'#fff'}}>A. James Clark Scholar</a> and <a href="https://eng.vt.edu/ceed/studentinvolvement/ceedoutstandingstudents/outstanding-students-october-2024/lauren-ruiz-arenas.html" target="_blank" rel="noreferrer" style={{color:'#fff'}}>VT CEED's October Outstanding Student of the Month!</a>
+                        I’m a curious lifelong learner who enjoys learning by doing and approaching problems 
+                        with both technical depth and a human-centered mindset. I’m especially interested in 
+                        backend engineering, infrastructure, and exploring the intersection of software and 
+                        machine learning.
                     </p>
                     <p>
-                        Outside of coding, I enjoy baking with my mom, reading at least 10 pages a
-                        day (current book: Atomic Habits by James Clear), and hitting the gym. I also
-                        am a dog mom to a beautiful 1-year-old Zuchon puppy named Mimi!
+                        Outside of engineering, I care deeply about community and creating opportunities for 
+                        others to succeed. As President of Computer Science Careers at Virginia Tech and an 
+                        A. James Clark Scholar, I’ve been fortunate to grow alongside a community that values 
+                        mentorship, collaboration, and impact.
+                    </p>
+                    <p>
+                        When I’m not coding, you’ll probably find me reading, baking, exploring new places, 
+                        at the gym, or spending time with my Zuchon puppy, Myla.
                     </p>
                     <div className='photos'>
                         <img className="pics" src={Me} alt="me" />
