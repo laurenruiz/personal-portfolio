@@ -8,7 +8,7 @@ const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const introArray = ['Hi,', 'I\'m']
     const nameArray = ['Lauren', 'Ruiz-Arenas,']
-    const jobArray = ['Software', 'Engineering', 'Student']
+    const jobArray = ['Software', 'Engineer']
 
     useEffect(() => {
         const timer = setTimeout(() => setLetterClass('text-animate-hover'), 7000)
@@ -28,7 +28,7 @@ const Home = () => {
                     <br />
                     <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={26} />
                 </h1>
-                <h2>Early Career Software Engineer</h2>
+                <h2>Experienced in Infrastructure and DevOps</h2>
                 <div className='button'>
                     <Link to="/contact" className='flat-button'>CONTACT ME</Link>
                 </div>

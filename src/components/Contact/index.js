@@ -35,9 +35,6 @@ const Contact = () => {
                     />
                 </h1>
                 <p>
-                    I am interested in internship
-                    opportunities for Summer 2025 and
-                    experiential learning opportunities.
                     If you have any questions or
                     comments, please reach out to me with
                     the form below!
