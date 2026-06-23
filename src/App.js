@@ -4,12 +4,12 @@ import Layout from './components/Layout'
 import Home from './components/Home'
 import About from './components/About';
 import Projects from './components/Projects';
-import SEED from './components/Projects/SEED';
-import LSLS from './components/Projects/LSLS';
-import Latitude from './components/Projects/Latitude';
-import Walmart from './components/Projects/Walmart';
-import ConnectViolet from './components/Projects/ConnectViolet';
-import PersonalPortfolio from './components/Projects/PersonalPortfolio';
+import SEED from './components/Projects/Pages/SEED';
+import LSLS from './components/Projects/Pages/LSLS';
+import Latitude from './components/Projects/Pages/Latitude';
+import Walmart from './components/Projects/Pages/Walmart';
+import ConnectViolet from './components/Projects/Pages/ConnectViolet';
+import PersonalPortfolio from './components/Projects/Pages/PersonalPortfolio';
 import Contact from './components/Contact';
 
 function App() {

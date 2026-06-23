@@ -11,7 +11,7 @@ const About = () => {
     const aboutArray = ['About', 'Me']
 
     useEffect(() => {
-        const timer = setTimeout(() => setLetterClass('text-animate-hover'), 3000)
+        const timer = setTimeout(() => setLetterClass('text-animate-hover'), 4500)
         return () => clearTimeout(timer)
     }, [])
     
@@ -20,10 +20,10 @@ const About = () => {
             <div className='container about-page'>
                 <div className='text-zone'>
                     <h1>
-                        <AnimatedLetters 
+                        <AnimatedLetters
                         letterClass={letterClass}
                         strArray={aboutArray}
-                        idx={15}
+                        idx={17}
                         />
                     </h1>
                     <p>
