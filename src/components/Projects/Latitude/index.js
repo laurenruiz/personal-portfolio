@@ -1,7 +1,6 @@
 import './index.scss'
 import AnimatedLetters from '../../AnimatedLetters'
 import { useState, useEffect } from 'react'
-import Loader from 'react-loaders'
 import LatitudePic from '../../../assets/images/Latitude.jpg'
 
 const Latitude = () => {
@@ -37,7 +36,6 @@ const Latitude = () => {
                     </div>
                 </div>
             </div>
-            <Loader type="pacman" />
         </>
     )
 }

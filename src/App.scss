@@ -24,6 +24,18 @@ textarea {
   font-family: 'Helvetica Neue';
 }
 
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #b7676b;
+  z-index: 2;
+  animation: fadeOut 0.5s 2s forwards;
+  pointer-events: none;
+}
+
 .loader-active {
   z-index: 3;
   display: block;

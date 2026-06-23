@@ -2,7 +2,6 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Loader from 'react-loaders'
 import { faJava, faPython, faLinux, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
 import Me from '../../assets/images/photo_of_me.JPG'
 import Myla from '../../assets/images/myla.jpg'
@@ -10,10 +9,10 @@ import Myla from '../../assets/images/myla.jpg'
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const aboutArray = ['About', 'Me']
+
     useEffect(() => {
-        setTimeout(() => {
-            setLetterClass('text-animate-hover')
-        }, 3000)
+        const timer = setTimeout(() => setLetterClass('text-animate-hover'), 3000)
+        return () => clearTimeout(timer)
     }, [])
     
     return (
@@ -84,7 +83,6 @@ const About = () => {
                 </div>
                 </div>
             </div>
-            <Loader type="pacman" />
         </>
     )
 }

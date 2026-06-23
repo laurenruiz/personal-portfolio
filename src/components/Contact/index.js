@@ -1,7 +1,6 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
@@ -85,7 +84,6 @@ const sendEmail = (e) => {
         {/* <br></br>
         <br></br> */}
       </div>
-      <Loader type="pacman" />
     </>
   )
 }

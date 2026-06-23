@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
 import './index.scss';
-import Loader from 'react-loaders';
 import HeadShot from '../../assets/images/laurenruiz@vt.edu-7.jpg'
 
 const Home = () => {
@@ -38,7 +37,7 @@ const Home = () => {
                         <br />
                         <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={20} />
                     </h1>
-                    <h2>Rising Junior at Virginia Tech</h2>
+                    <h2>Early Career Software Engineer</h2>
                     <div className='button'>
                     <Link to="/contact" className='flat-button'>CONTACT ME</Link>
                     </div>
@@ -48,7 +47,6 @@ const Home = () => {
                     <br></br> */}
                 </div>
             </div>
-            <Loader type="pacman" />
         </>
     )
 }

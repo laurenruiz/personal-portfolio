@@ -1,7 +1,6 @@
 import './index.scss'
 import AnimatedLetters from '../../AnimatedLetters'
 import { useState, useEffect } from 'react'
-import Loader from 'react-loaders'
 import GooglePic from '../../../assets/images/LSLS.JPG'
 
 const LSLS = () => {
@@ -37,7 +36,6 @@ const LSLS = () => {
                     </div>
                 </div>
             </div>
-            <Loader type="pacman" />
         </>
     )
 }

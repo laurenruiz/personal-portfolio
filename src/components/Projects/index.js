@@ -2,7 +2,6 @@ import './index.scss'
 import AnimatedLetters from '../../components/AnimatedLetters'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import Loader from 'react-loaders'
 import ConnectVioletSS from '../../assets/images/connect-violet.jpg'
 import PortfolioSS from '../../assets/images/portfolio.png'
 import SEEDSS from '../../assets/images/SEED-logo.png'
@@ -89,7 +88,6 @@ const Projects = () => {
                     <br></br>
                 </div>
             </div>
-            <Loader type="pacman" />
         </>
     )
 }

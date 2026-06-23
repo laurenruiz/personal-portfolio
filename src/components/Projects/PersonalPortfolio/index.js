@@ -2,7 +2,6 @@ import './index.scss'
 import AnimatedLetters from '../../AnimatedLetters'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import Loader from 'react-loaders'
 import YTVidSS from '../../../assets/images/youtube_picture.png'
 import VertSideBar from '../../../assets/images/Vertical_sidebar.png'
 import Devtools from '../../../assets/images/devtools.png'
@@ -96,7 +95,6 @@ const PersonalPortfolio = () => {
                     </div>
                 </div>
             </div>
-            <Loader type="pacman" />
         </>
     )
 }

@@ -1,7 +1,6 @@
 import './index.scss'
 import AnimatedLetters from '../../AnimatedLetters'
 import { useState, useEffect } from 'react'
-import Loader from 'react-loaders'
 import WalmartPic from '../../../assets/images/Walmart.jpg'
 
 const Walmart = () => {
@@ -37,7 +36,6 @@ const Walmart = () => {
                     </div>
                 </div>
             </div>
-            <Loader type="pacman" />
         </>
     )
 }
