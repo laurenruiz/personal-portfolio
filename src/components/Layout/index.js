@@ -1,5 +1,6 @@
 import './index.scss';
 import Sidebar from '../Sidebar'
+import ChatbotWidget from '../ChatbotWidget'
 import { Outlet, useLocation } from 'react-router-dom';
 import LogoS from '../../assets/images/butterfly_white.png'
 import Loader from 'react-loaders'
@@ -37,6 +38,7 @@ const Layout = () => {
             <img className='bgButterflies' id='B2' src={LogoS} alt="Butterfly Logo"/>
             <img className='bgButterflies' id='B3' src={LogoS} alt="Butterfly Logo"/>
             <img className='bgButterflies' id='B4' src={LogoS} alt="Butterfly Logo"/>
+            <ChatbotWidget />
         </div>
     )
 }
