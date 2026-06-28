@@ -75,11 +75,16 @@ const ChatbotWidget = () => {
     }
   };
 
-  const resetMobileZoom = () => {
+  const resetMobileView = () => {
+    if (window.innerWidth > 500) return;
     const viewport = document.querySelector('meta[name=viewport]');
-    if (!viewport) return;
-    viewport.setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1');
-    setTimeout(() => viewport.setAttribute('content', 'width=device-width, initial-scale=1'), 50);
+    if (viewport) {
+      viewport.setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1');
+      setTimeout(() => viewport.setAttribute('content', 'width=device-width, initial-scale=1'), 50);
+    }
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
   };
 
   const handleKeyDown = (e) => {
@@ -182,7 +187,7 @@ const ChatbotWidget = () => {
 
       <button
         className="chat-toggle-btn"
-        onClick={() => { const closing = isOpen; setIsOpen(!isOpen); if (closing) resetMobileZoom(); }}
+        onClick={() => { const closing = isOpen; setIsOpen(!isOpen); if (closing) resetMobileView(); }}
         title={isOpen ? 'Close chat' : 'Chat with Myla'}
       >
         {isOpen ? '✕' : <img src="/myla.png" alt="Myla" style={{ width: '38px', height: '38px', borderRadius: '50%', objectFit: 'cover' }} />}
