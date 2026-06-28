@@ -341,7 +341,7 @@
         }
         .text-zone
         {
-            order: 2;
+            order: 3;
             width: 84%;
             max-width: 100%;
             margin-left: 0px;
@@ -362,6 +362,7 @@
 
         &::after {
             content: '↓';
+            order: 2;
             display: block;
             text-align: center;
             font-size: 22px;
