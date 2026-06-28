@@ -305,36 +305,36 @@
         overflow-y: scroll;
         .cube {
             order: 1;
-            width: 500px;
-            height: 375px;
-            .stage-cube-cont{   
-                height: inherit;      
+            width: 100%;
+            height: 220px;
+            .stage-cube-cont{
+                height: inherit;
                 .cubespinner {
-                    width: 180px; // needs to match face of cube width
-                    height: 180px; //needs to match face of cube height         
+                    width: 140px; // needs to match face of cube width
+                    height: 140px; //needs to match face of cube height
                     div {
                         width: inherit;
                         height: inherit;
-                        font-size: 100px;
+                        font-size: 75px;
                     }
-                
+
                     .face1 {
-                        transform: translateZ(100px);
+                        transform: translateZ(70px);
                     }
                     .face2 {
-                        transform: rotateY(90deg) translateZ(100px);
+                        transform: rotateY(90deg) translateZ(70px);
                     }
                     .face3 {
-                        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+                        transform: rotateY(90deg) rotateX(90deg) translateZ(70px);
                     }
                     .face4 {
-                        transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+                        transform: rotateY(180deg) rotateZ(90deg) translateZ(70px);
                     }
                     .face5 {
-                        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+                        transform: rotateY(-90deg) rotateZ(90deg) translateZ(70px);
                     }
                     .face6 {
-                        transform: rotateX(-90deg) translateZ(100px);
+                        transform: rotateX(-90deg) translateZ(70px);
                     }
                 }
             }
@@ -347,11 +347,11 @@
             margin-left: 0px;
             padding: 0px 8%;
             h1 {
-                font-size: 600%;
+                font-size: 500%;
             }
             p {
                 text-align: center;
-                font-size: 250%;
+                font-size: 220%;
             }
             .photos{
                 flex-direction: column;
@@ -359,6 +359,22 @@
                 aspect-ratio: 1;
             }
         }
+
+        &::after {
+            content: '↓';
+            display: block;
+            text-align: center;
+            font-size: 22px;
+            color: rgba(255, 255, 255, 0.6);
+            padding: 6px 0 12px;
+            animation: scrollBounce 1.5s ease-in-out infinite;
+            flex-shrink: 0;
+        }
     }
-} 
+}
+
+@keyframes scrollBounce {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(6px); }
+}
 

@@ -178,7 +178,7 @@ const ChatbotWidget = () => {
         onClick={() => setIsOpen(!isOpen)}
         title={isOpen ? 'Close chat' : 'Chat with Myla'}
       >
-        {isOpen ? '✕' : '🐾'}
+        {isOpen ? '✕' : <img src="/myla.png" alt="Myla" style={{ width: '38px', height: '38px', borderRadius: '50%', objectFit: 'cover' }} />}
       </button>
     </div>
   );
